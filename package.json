@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/charles-chenzz/simple-MQ-using-go-redis/issues"
   },
-  "homepage": "https://github.com/charles-chenzz/simple-MQ-using-go-redis#readme"
+  "homepage": "https://github.com/charles-chenzz/simple-MQ-using-go-redis#readme",
+  "dependencies": {
+    "simple-mq-using-go-redis": "^1.0.0"
+  }
 }
