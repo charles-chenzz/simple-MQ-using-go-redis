@@ -1,6 +1,6 @@
 {
   "name": "simple-mq-using-go-redis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "redis mq as a simple and fast solution",
   "main": "main.go",
   "scripts": {
