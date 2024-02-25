@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/charles-chenzz/simple-MQ-using-go-redis#readme",
   "dependencies": {
-    "simple-mq-using-go-redis": "^1.0.0"
+    "simple-mq-using-go-redis": "^1.0.0",
+    "zshop": "^1.0.1"
   }
 }
