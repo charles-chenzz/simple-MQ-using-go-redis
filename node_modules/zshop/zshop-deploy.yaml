@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zshop-v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zshop-v1
+  template:
+    metadata:
+      labels:
+        app: zshop-v1
+    spec:
+      containers:
+      - name: zshop-v1
+        image: rekleschen/projectz:v0.2
+        ports:
+        - containerPort: 8080
+      terminationGracePeriodSeconds: 45

@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+package api.order.v1;
+
+option go_package = "zshop/api/order/v1;v1";
+option java_multiple_files = true;
+option java_package = "api.order.v1";
+
+service Order {
+	rpc CreateOrder (CreateOrderRequest) returns (CreateOrderReply);
+	rpc GetOrder (GetOrderRequest) returns (GetOrderReply);
+}
+
+message OrderField {
+	uint64 order_id = 1;
+	uint64 transaction_id = 2;
+	int64 product_id = 3;
+	int64 product_type = 4;
+	int64 quantity = 5;
+	string size = 6;
+	string color = 7;
+	int64 status = 8;
+	int64 retry_time = 9;
+}
+
+message OrderInformation {
+	ShippingAddress shipping_address = 1;
+	OrderField order_field = 2;
+}
+
+message User {
+	int64 user_id = 1;
+	string user_name = 2;
+	bool is_member = 3;
+}
+
+message ShippingAddress {
+	string email = 1;
+	string address = 2;
+	string first_name = 3;
+	string last_name = 4;
+	string apartment_suite_etc = 5;
+	string city = 6;
+	int64 state = 7;
+	int64 zip_code = 8;
+	int64 phone = 9;
+}
+
+message CreateOrderRequest {
+	OrderInformation order_information = 1;
+	User user = 2;
+}
+
+message CreateOrderReply {
+	int64 err_code = 1;
+	string err_message = 2;
+}
+
+message GetOrderRequest {
+	OrderField order_field = 1;
+}
+
+message GetOrderReply {
+	int64 err_code = 1;
+	string err_message = 2;
+	OrderInformation order_information = 3;
+}
