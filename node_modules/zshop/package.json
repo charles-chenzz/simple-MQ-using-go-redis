@@ -1,6 +1,6 @@
 {
   "name": "zshop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ha shop",
   "main": "cmd/zshop/main.go",
   "scripts": {
@@ -17,7 +17,8 @@
     "redis",
     "grpc",
     "gorm",
-    "cicd"
+    "cicd",
+    "mysql"
   ],
   "author": "charles-chenzz",
   "license": "MIT",

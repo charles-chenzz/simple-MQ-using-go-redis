@@ -1,7 +1,7 @@
 {
   "name": "simple-mq-using-go-redis",
-  "version": "1.0.2",
-  "description": "redis mq as a simple and fast solution",
+  "version": "1.0.3",
+  "description": "redis mq as a simple and fast solution for event driven",
   "main": "main.go",
   "scripts": {
     "test": "go test ."
@@ -11,7 +11,8 @@
     "url": "git+https://github.com/charles-chenzz/simple-MQ-using-go-redis.git"
   },
   "keywords": [
-    "redis"
+    "redis",
+    "golang"
   ],
   "author": "charles-chenzz",
   "license": "MIT",
